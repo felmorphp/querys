@@ -9,8 +9,8 @@
 
 select events.idEvent, events_races.raceNumber, events_runners.name,events_runners.programNumber
 from events
-   join  events_races on events_races.idEvent = events.idEvent
- left join events_runners on events_runners.idRace = events_races.idRace and programNumber=11
+join  events_races on events_races.idEvent = events.idEvent
+left join events_runners on events_runners.idRace = events_races.idRace and programNumber=11
 where events.idEvent = 552;
 
 
